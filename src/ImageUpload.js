@@ -3,7 +3,7 @@ import { storage } from "./firebase";
 import ImageGallery from "./ImageGallery";
 import "bootstrap/dist/css/bootstrap.css";
 
-function ImageUpload() {
+function ImageUpload({ onUploadSuccess }) {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -48,8 +48,10 @@ function ImageUpload() {
           console.log("File uploaded:", snapshot);
           setSelectedFile(null);
           setUploadProgress(0);
+          // Call the onUploadSuccess callback to notify the parent component
+          onUploadSuccess(file.name);
           // Reload the page after a successful upload
-          ImageGallery.refresh();
+          window.location.reload();
         })
         .catch((error) => {
           console.error("Error uploading file:", error);
