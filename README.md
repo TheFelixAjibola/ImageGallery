@@ -16,7 +16,6 @@ To run the Image Gallery project locally, you'll need to follow these steps:
    ```
    git clone https://github.com/thefelixajibola/image-gallery.git
    ```
-   Replace `my-username` with `yourusername`, that is, with your actual GitHub username.
 
 **Step 3: Set Up Firebase Configuration**
 
@@ -62,3 +61,7 @@ To run the Image Gallery project locally, you'll need to follow these steps:
 2. The uploaded images will be displayed in the gallery, and you can interact with them, including dragging and dropping to reorder.
 
 That's it! You should now have the Image Gallery project running locally on your machine. You can explore the features and customize it further as needed.
+
+Regards,
+FELIX AJIBOLA
+
