@@ -38,10 +38,6 @@ function ImageGallery() {
     };
 
     fetchImages();
-
-    // const refreshInterval = setInterval(fetchImages, 5000);
-
-    // return () => clearInterval(refreshInterval);
   }, []);
 
   const handleSearchInputChange = (e) => {

@@ -1,65 +1,64 @@
-Stage Three
+To run the Image Gallery project locally, you'll need to follow these steps:
 
-Task: Develop a Drag-and-Drop Image gallery using React or Next Js
+**Step 1: Set Up Firebase Project**
 
-Objective: You will implement a fully functional and responsive image gallery that showcases a collection of images in a visually appealing way.
-A user should be able to Login to the gallery page. Authenticated users should be able to use the Drag-and-Drop feature, they should be able to select and drag images, effortlessly rearranging them within the gallery.
+1. Go to the Firebase Console (https://console.firebase.google.com/).
+2. Click on "Add project" and follow the prompts to create a new Firebase project.
+3. Once the project is created, go to the project settings.
+4. Under the "General" tab, scroll down to the "Your apps" section and click on the web app icon (</>).
+5. Register your app by providing a nickname and enabling Firebase Hosting. Follow the setup instructions to add Firebase to your web app.
 
-Requirements:
+**Step 2: Clone the Repository**
 
--     	Simple Authentication: 
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to clone the Image Gallery project.
+3. Run the following command to clone the repository:
+   ```
+   git clone https://github.com/thefelixajibola/image-gallery.git
+   ```
+   Replace `my-username` with `yourusername`, that is, with your actual GitHub username.
 
-  This means login with this email and password:
-  UserName: user@example.com
-  Password: 1Password
-  The authentication form fields should have proper validation setup, with proper error messages. You do not need to implement this on the backend yourself, you could use solutions like NextAuth, Auth0 or Clerk, firebase for Auth or add etc.
+**Step 3: Set Up Firebase Configuration**
 
--     	Image Display:
-  Display a grid layout that showcases a collection of images presented in a visually appealing manner with consistent spacing and sizing, add a tag to each image.
--     	Loading state:
-  The page should have a loading state for when images are not ready for display, display a skeleton loader or a loading spinner when loading is true
--     	Search Functionality:
+1. Go to the Firebase Console and select your project.
+2. In the project settings, scroll down to the "Firebase SDK snippet" section.
+3. Select the "Config" radio button.
+4. Copy the configuration object (a JavaScript object with keys like `apiKey`, `authDomain`, etc.).
 
-  You should have a search field that filters the image list based on the tags added to the images.
+**Step 4: Configure Firebase in the Project**
 
--     	Drag-and-Drop:
+1. Navigate to the project directory (the one you cloned in Step 2).
+2. Locate the `src` folder and open the `firebase.js` file.
+3. Replace the placeholder Firebase configuration with the one you copied from the Firebase Console.
 
-  Implement the ability for users to drag and drop images within the gallery.
+**Step 5: Install Dependencies**
 
--     	User-friendly Feedback:
+1. Open your terminal or command prompt.
+2. Navigate to the project directory (the root of the cloned repository).
+3. Run the following command to install project dependencies:
+   ```
+   npm install
+   ```
 
-  Incorporate smooth animations and visual cues that provide feedback during drag and drop interactions.
+**Step 6: Run the Application**
 
--     	Responsive Design:
+1. After the dependencies are installed, run the following command to start the development server:
+   ```
+   npm run start
+   ```
 
-  Ensure that the gallery is responsive and functions seamlessly on different devices, including mobile phones, tablets, and desktops.
+**Step 7: Access the Application**
 
--     	Design Flexibility:
-  While adhering to the above requirements, you have the creative freedom to come up with a unique and appealing design.
+1. Once the development server is running, open your web browser.
+2. Access the Image Gallery application by going to http://localhost:3000/ in your browser.
 
-Acceptance Criteria:
+**Step 8: Authentication**
 
--     	Functional Authentication: A fully functional authentication process.
--
--     	Drag-and-Drop Feature: A fully functional drag and drop feature must be implemented.
+1. You can sign in or sign up using the provided authentication methods. If you're running this locally, it may use Firebase Authentication for email/password or other methods you configured.
 
--     	Responsiveness: Design must be responsive across various desktop  screens, including mobile and tablet screens.
+**Step 9: Upload and View Images**
 
--     	User Experience: Design must be intuitive, appealing, and encourage easy navigation and operation (i.e., NO LAGGING).
--
--     	Image Display: All Images should have consistent spacing and sizing.
+1. Use the "Image Upload" section to upload images.
+2. The uploaded images will be displayed in the gallery, and you can interact with them, including dragging and dropping to reorder.
 
-Submission Mode
-
--     	Host your frontend application on a platform of your choice (e.g., GitHub Pages, Netlify).
--     	Provide clear instructions on how to run your project locally in your README.md file.
--     	Ensure that the code is well-documented and organized.
-  CLICK HERE TO SUBMIT
-
-Submission Deadline:
-The deadline for submissions is 21st September 2023, 11:59 PM GMT. Late submissions will not be entertained.
-Link to submission form again: https://docs.google.com/forms/d/e/1FAIpQLSe-SIZ2Bk9w5BnNbEYATj2UzRRsDkgeKZe1r7UeLlNTsegPhQ/viewform?usp=sf_link
-
-I want to update the image gallery component's state with the latest images after an upload without a full page refresh, that is, there should be no need for the interval-based page refresh.
-
-If that would mean updating the uploadFile function in the ImageUpload component too, please update it.
+That's it! You should now have the Image Gallery project running locally on your machine. You can explore the features and customize it further as needed.
