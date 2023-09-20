@@ -62,6 +62,11 @@ To run the Image Gallery project locally, you'll need to follow these steps:
 
 That's it! You should now have the Image Gallery project running locally on your machine. You can explore the features and customize it further as needed.
 
+**Step 7: Login Details**
+
+1. Email: `user@example.com`
+2. Password `1Password`
+
 Regards,
 FELIX AJIBOLA
 
