@@ -60,7 +60,7 @@ To run the Image Gallery project locally, you'll need to follow these steps:
 1. Use the "Image Upload" section to upload images.
 2. The uploaded images will be displayed in the gallery, and you can interact with them, including dragging and dropping to reorder.
 
-That's it! You should now have the Image Gallery project running locally on your machine. You can explore the features and customize it further as needed.
+That's it! You should now have the Image Gallery project running locally on your machine. You can explore the features.
 
 **Step 7: Login Details**
 
